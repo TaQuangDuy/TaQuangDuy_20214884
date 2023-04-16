@@ -1,18 +1,19 @@
 import java.util.Scanner;
+
 public class TwoDoubleNumbers {
-	public static void main (String[] args){
-		Scanner input = new Scanner(System.in);
-
-		System.out.print("Enter 1st number(num1): ");
-		double num1 = input.nextDouble();
-		
-		System.out.print("Enter 2nd number(num2): ");
-		double num2 = input.nextDouble();
-
-		System.out.println("sum of num1 and num2: " +(num1 + num2));
-		System.out.println("difference of num1 and num2: " +java.lang.Math.abs((num1 - num2)));
-		System.out.println("product of num1 and num2: " +(num1 * num2));	
-		System.out.println("quotient of num1 and num2: " +(num1 / num2));
-		input.close();
-		}
-	}
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the first number: ");
+        double num1 = input.nextDouble();
+        System.out.print("Enter the second number: ");
+        double num2 = input.nextDouble();
+        double sum = num1 + num2;
+        double difference = num1 - num2;
+        double product = num1 * num2;
+        double quotient = num1 / num2;
+        System.out.println("The sum is: " + sum);
+        System.out.println("The difference is: " + difference);
+        System.out.println("The product is: " + product);
+        System.out.println("The quotient is: " + quotient);
+    }
+}
