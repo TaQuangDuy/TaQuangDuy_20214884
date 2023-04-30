@@ -1,0 +1,3 @@
+
+Question 8:
+In Java, it is not possible to define two constructors with the same number and types of parameters within the same class.If you create a constructor that builds a DVD by title using a single String parameter, and then attempt to create another constructor that builds a DVD by category also using a single String parameter, the compiler will generate an error. This is because the parameter lists of the two constructors are identical, making them indistinguishable and ambiguous to the compiler.
