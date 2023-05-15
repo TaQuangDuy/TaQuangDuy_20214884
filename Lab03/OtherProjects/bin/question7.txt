@@ -1,0 +1,6 @@
+In brief, accessor methods are useful when you need to:
+Control access to the state of an object
+Enforce encapsulation and hide implementation details
+Provide a clear interface for interacting with an object
+Validate or transform input before setting a value
+Perform additional logic or side effects when getting or setting a value
