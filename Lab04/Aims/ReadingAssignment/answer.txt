@@ -1,0 +1,15 @@
+9. Which classes are aggregates of other classes?
+	Class CompactDisc is the aggregate of class Track.
+	Class Cart and Store are the aggregates of class Media.
+
+10. If the passing object is not an instance of Media, what happens?
+	If the passing object is not an instance of Media, a ClassCastException will be thrown. This is because the cast will try to convert an object of a different type to a Media object, which is not possible.
+12.
+-What class should implement the Comparable interface?
+The class that should implement the Comparable interface is the class that has the item to compare, in this case, the Media class.
+-In those classes, how should you implement the compareTo()method be to reflect the ordering that we want?
+To reflect the ordering that we want, we would implement the compareTo() method in the Media class to compare the items based on the desired attribute. For example, to sort the items by title, the compareTo() method would compare the titles of the items.
+-Can we have two ordering rules of the item (by title then cost and by cost then title) if we use this Comparable interface approach?
+It's possible to have two ordering rules of the item (by title then cost and by cost then title) if we use the Comparable interface approach. This can be done by creating two different implementations of the Comparable interface, one implementation for each ordering rule.
+-Suppose the DVDs has a different ordering rule from the other media types, that is by title, then decreasing length, then cost. How would you modify your code to allow this?
+To allow DVDs to have a different ordering rule from the other media types, we would create a separate DVD class that extends the DigitalVideoDisc class and implements the Comparable interface. In the DVD class, we would override the compareTo() method to sort the DVDs by title, then decreasing length, then cost. We would modify the Cart class to use the new DVD class instead of the DigitalVideoDisc class for DVDs.
