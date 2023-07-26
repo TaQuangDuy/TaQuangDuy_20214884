@@ -1,0 +1,9 @@
+Top-Level Containers:
+AWT uses a top-level container known as "Frame" to create windows for user interfaces. On the other hand, Swing extends AWT and introduces its own enhanced top-level container called "JFrame." The "JFrame" class offers additional features and functionality beyond what "Frame" provides.
+
+Class Names of Components:
+In AWT, the class names of components typically begin with a capital letter. For instance, you have components like Button, TextField, and Label.
+
+In Swing, the components have similar names to their AWT counterparts but start with a "J" prefix. For example, the equivalent Swing components are JButton, JTextField, and JLabel.
+
+The "J" prefix in Swing components helps to distinguish them from AWT components and signifies that they are part of the Swing library. Additionally, Swing components usually offer more flexibility and customization options compared to their AWT counterparts.
